@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    tools:context=".fragments.HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:clickable="false"
+                        android:text="@string/horaTSN"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etHorasTotales"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginLeft="43dp"
+                        android:autofillHints=""
+                        android:ems="4"
+                        android:hint="@string/_000"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_2"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etMinTotales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:ems="2"
+                        android:hint="@string/_00"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"/>
+
+                    <Button
+                        android:id="@+id/btCargar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:shadowColor="#838383"
+                        android:shadowDx="5"
+                        android:shadowRadius="3"
+                        android:text="@string/Set"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/horaCont"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tvActuales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/_00_00"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/horasFaltan"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+                    <TextView
+                        android:id="@+id/tvFaltantes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/_00_00"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etHorasObjetivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:autofillHints=""
+                        android:ems="5"
+                        android:hint="@string/horaObjetivo"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/TiempoTripulacion"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etHorasInsert"
+                        android:layout_width="32dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:autofillHints=""
+                        android:ems="10"
+                        android:hint="@string/_00"
+                        android:inputType="number"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tv10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etMinInsert"
+                        android:layout_width="32dp"
+                        android:layout_height="45dp"
+                        android:autofillHints=""
+                        android:ems="10"
+                        android:hint="@string/_00"
+                        android:inputType="number"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etOrdenVuelo"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:autofillHints=""
+                        android:ems="10"
+                        android:hint="@string/OrdeVuelos"
+                        android:inputType="number"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:hint="@string/Piloto"
+                        android:textColorHint="#FFFFFF">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNomPilot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etSiio"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:autofillHints=""
+                        android:ems="10"
+                        android:hint="@string/no_siio"
+                        android:inputType="number"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:hint="@string/Copiloto"
+                        android:textColorHint="#FFFFFF">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNomCopilot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--DatePicker para le fecha de la evaluacion -->
+                    <Button
+                        android:id="@+id/datePickerBtn"
+                        style="?android:spinnerStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/_00_00_00"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/btInsertar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:shadowColor="#838383"
+                        android:shadowDx="2"
+                        android:shadowRadius="3"
+                        android:text="@string/ContBoton" />
+
+
+                </LinearLayout>
+
+
+
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@color/colorPrimary" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:text="@string/horaHoy"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tvHorasHoy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:background="#BDBDBD"
+                        android:text="@string/_00_00" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:text="@string/horaSemana"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tvHorasDias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:background="#BDBDBD"
+                        android:text="@string/_00_00" />
+
+                    <Spinner
+                        android:id="@+id/spDias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:text="@string/horaMes"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvHorasMes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:background="#BDBDBD"
+                        android:text="@string/_00_00"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/spMeses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:text="@string/horaAno"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                         />
+
+                    <TextView
+                        android:id="@+id/tvHorasAno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:background="#BDBDBD"
+                        android:text="@string/_00_00"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/spAnual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/btDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@android:color/darker_gray"
+                    android:onClick="GetDisplayPage"
+                    android:shadowColor="#838383"
+                    android:shadowDx="2"
+                    android:shadowRadius="3"
+                    android:text="@string/Buscar" />
+
+                <TextView
+                    android:id="@+id/tvDerechos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/copyRight"
+                    android:textColor="@color/colorPrimary_Soft"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

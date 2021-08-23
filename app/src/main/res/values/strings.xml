@@ -1,0 +1,138 @@
+<resources>
+    <!-- Configuraciones buscar conexion por terminal CMD >ipconfig el valos IPv4
+   https://www.absoftwaregroup.com/platform/ucentral-API/
+  <string name="url">http://192.168.1.56/contador3K-API/</string>
+  <string name="url">http://172.30.3.220/contador3K-API/</string>
+  <string name="url">https://www.absoftwaregroup.com/platform/contador3K-API/</string>
+  -->
+    <string name="url">https://www.absoftwaregroup.com/platform/contador3K-API/</string>
+
+    <string name="app_name">Contador TresK</string>
+    <string name="ContBoton">CARGAR</string>
+    <string name="CalcBoton">TODO</string>
+    <string name="imgBoton">TODO</string>
+    <string name="FullBoton">TODO</string>
+    <string name="RadioBotton">TODO</string>
+    <string name="SalirBoton">salir</string>
+    <string name="Piloto">Piloto</string>
+    <string name="Copiloto">Copiloto</string>
+    <string name="a_c_start">A/C Start</string>
+    <string name="a_c_finish">A/C Finish</string>
+    <string name="nocturne">Noc</string>
+    <string name="crew">Crew</string>
+    <string name="vfr">VFR</string>
+    <string name="ifr">IFR</string>
+    <string name="a_c">Aircraft</string>
+    <string name="_00">00</string>
+    <string name="_000">0000</string>
+    <string name="_0">0</string>
+    <string name="_00_00">00:00</string>
+    <string name="_2">:</string>
+    <string name="todo">TODO</string>
+    <string name="igual">=</string>
+    <string name="Quantity">Quantity</string>
+    <string name="Fuel_IN">Fuel IN</string>
+    <string name="Fuel_OUT">Fuel OUT</string>
+    <string name="Eng_SD">ENG S/D</string>
+    <string name="TO_Fuel">TO Fuel</string>
+    <string name="LND_Fuel">LND Fuel</string>
+    <string name="Fuel_Trip">Fuel TRIP</string>
+    <string name="Remain">REMAIN</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="lbs">LBS</string>
+    <string name="kg">KG</string>
+    <string name="image">TODO</string>
+    <string name="etRegistro">Registro</string>
+    <string name="TipoAeronave">Tipo</string>
+    <string name="Matricula">Matricula</string>
+    <string name="Flight">Flight</string>
+    <string name="Set">Set</string>
+    <string name="Vuelo">No ID</string>
+    <string name="De">De</string>
+    <string name="A">A</string>
+    <string name="TiempoTripulacion">Tiempo Tripulación:</string>
+    <string name="TiempoAeronave">Tiempo Aeronave</string>
+    <string name="OrdeVuelos">O.V.</string>
+    <string name="Pax">Pax</string>
+    <string name="Carga">Carga Kg</string>
+    <string name="Fuel">Fuel</string>
+    <string name="TotalTrip">HORAS</string>
+    <string name="TotalAero">Total Aero:</string>
+    <string name="Prendida">Prendida</string>
+    <string name="Decolaje">T/O</string>
+    <string name="Aterrizaje">LND</string>
+    <string name="Apagada">Apagada</string>
+    <string name="Add">Guardar</string>
+    <string name="Titulo">Bitacora de Vuelo</string>
+    <string name="Buscar">Consultar</string>
+    <string name="Eliminar">Eliminar</string>
+    <string name="Modificar">Modificar</string>
+    <string name="tvRegistro">Registro:</string>
+    <string name="tvNumVuelo">Vuelo No:</string>
+    <string name="tvOrdenVelo">O/V</string>
+    <string name="tvDestino">Destino:</string>
+    <string name="tvVacio">---------</string>
+    <string name="tvFecha">FECHA</string>
+    <string name="etVacio"> </string>
+    <string name="tvTituloContador">Contador 3K Horas de Vuelo</string>
+    <string name="horaTSN">TSN:</string>
+    <string name="horaQuincena">FN:</string>
+    <string name="horaCont">Actuales:</string>
+    <string name="horasFaltan">Faltantes:</string>
+    <string name="horaHoy">Total Hoy:</string>
+    <string name="horaSemana">Total Día:</string>
+    <string name="horaMes">Total Mes:</string>
+    <string name="horaAno">Total Año:</string>
+    <string name="horaObjetivo">Objetivo:3K</string>
+    <string name="copyRight">3K © AB Software</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_siio">No SIIO</string>
+    <string name="_00_00_00">00/00/00</string>
+    <string name="intro">
+        Herramienta para el control de tiempos de tripulación, el contador de horas 3K es una aplicación que permite el registro detallado de las horas de vuelo y gestiona un estimado preciso para cumplir el Objetivo de las 3000 Horas de vuelo.
+    </string>
+    <string name="sitio_absort">
+       https://www.absoftwaregroup.com
+    </string>
+    <string name="email_absoft">
+       ceo@absoftwaregroup.com
+    </string>
+    <string name="home">
+        <b>Página Home </b> Contiene tres Secciones:
+         <br />\u000A
+        <u>Primera Sección</u>
+        <br />\u000A
+          - Ajuste de horas a la fecha <b>TSN</b>
+        <br />\u000A
+         - Cuenta las horas Actuales.
+         <br />\u000A
+          -Calcula las Horas faltantes para el Objetivo 3000 Hrs.
+        <br />\u000A
+        <u>Segunda Sección</u>
+        <br />\u000A
+          -Ingreso de Tiempo Tripulación, OV, numero SIIO, Nombres de Piloto y Copiloto.
+        <br />\u000A
+       <u> Tercera Sección</u>
+        <br />\u000A
+          - Consulta de registros por Año, Mes ó Día.
+    </string>
+    <string name="paso_1">
+        <b>Paso 1: </b>Ingrese las horas <b>TSN</b> (Tiempo actual) estas horas son la que actualmente tiene reportada en los sistemas de información y oprimir el botón <b>SET</b>, esto ajusta el inicio del contador.
+        si desea Ajustar o modificar nuevamente el <b>TSN</b> oprima sobre <b>3K © AB Software</b>.
+    </string>
+    <string name="paso_2">
+        <b>Paso 2: </b>Ingrese el tiempo de tripulación de cada vuelo en <b>Tiempo Tripulación: <u>00</u>:<u>00</u></b> y despues oprima el botón <b>CARGAR</b>, esto almacena el registro en la base de datos local.
+    </string>
+    <string name="paso_3">
+        <b>Paso 3: </b>Para consultar los registros seleccione <b>Ver año</b>, esta selecciona optiene el total de horas voladas en el Año seleccionado, lo mismo ocurre con <b>Ver Meses</b> y <b>Ver Días</b>, al oprimir el botón <b>CONSULTAR</b>, la aplicación muestra los registros según la selección de año, mes o día.
+    </string>
+
+    <string name="cloud">
+        <b>Página Cloud </b>
+         <br />\u000A
+        En esta página permite hacer un BackUp de toda la información y enviarla al correo que se registre como Usuario.
+    </string>
+    <string name="como_funciona"><u>Como Funciona</u></string>
+    <string name="contador_tresk">Contador TresK</string>
+    <string name="recomendaciones">- Recibimos con gusto todas las recomendaciones:</string>
+</resources>
